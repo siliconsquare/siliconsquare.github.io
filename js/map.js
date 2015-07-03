@@ -17,7 +17,7 @@
             scrollwheel: false,
             panControl: true,
             streetViewControl: true,
-            draggable : true,
+            draggable : false,
             overviewMapControl: true,
             overviewMapControlOptions: {
                 opened: false,

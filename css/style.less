@@ -87,6 +87,7 @@ img{
 
 .service{
 	text-align: center;
+	margin-bottom: 40px;
 	img{
 		width: 100%;
 		max-width: 335px;
@@ -125,5 +126,23 @@ img{
 	}
 	a {
 	    color: #4272db;
+	}
+}
+@media screen and (max-width: 640px) {
+	body{
+		& > article{
+			.head{
+				height: 400px;
+				.main-visual{
+					height: 400px;
+				}
+				.logo{
+					margin: px auto;
+				}
+			}
+		}
+	}
+	.map{
+		height: 300px;
 	}
 }
