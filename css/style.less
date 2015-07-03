@@ -1,11 +1,12 @@
+@baseFontFamily: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 @englishFontFamily: 'Roboto Condensed', sans-serif;
 @bgColor: #3a78b5;
 
 body{
+	font-family: @baseFontFamily;
 	& > article{
-		.head{
+		& > header{
 			height: 600px;
-			margin-bottom: 100px;
 			.main-visual{
 				position: absolute;
 				top: 0;
@@ -45,7 +46,9 @@ body{
 			}
 		}
 		section{
-			margin-bottom: 100px;
+			padding: 100px 0;
+			&:last-child{
+			}
 			header{
 				text-align: center;
 			}
@@ -87,7 +90,6 @@ img{
 
 .service{
 	text-align: center;
-	margin-bottom: 40px;
 	img{
 		width: 100%;
 		max-width: 335px;
@@ -113,7 +115,6 @@ img{
 
 .map {
     height:600px;
-    margin-top: 100px;
 }
 .gm-style-iw{
 	* {
@@ -128,7 +129,7 @@ img{
 	    color: #4272db;
 	}
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 767px) {
 	body{
 		& > article{
 			.head{
@@ -142,7 +143,17 @@ img{
 			}
 		}
 	}
+	.service{
+		margin-bottom: 40px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
 	.map{
 		height: 300px;
 	}
+}
+
+.bg-grey{
+	background: #f9f9f9;
 }
