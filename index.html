@@ -1,1 +1,151 @@
-www.siliconsquare.co.jp
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+	<article>
+		<section class="head">
+			<div class="main-visual"></div>
+			<img src="img/logo_blue_2x.png" alt="SILICON SQUARE" class="logo before">
+			<img src="img/logo_white_2x.png" alt="SILICON SQUARE" class="logo after">
+		</section>
+		<div class="container">
+			<section id="services">
+				<header>
+					<h2>SERVICE</h2>
+				</header>
+				<div class="row">
+					<div class="service col-md-4">
+						<img src="img/service1.png" alt="">
+						<h3>コンサルティング</h3>
+						<p>
+							ITシステムのコンサルティング・企画・分析
+						</p>
+					</div>
+					<!-- /.col-md-4 -->
+					<div class="service col-md-4">
+						<img src="img/service2.png" alt="">
+						<h3>システム開発</h3>
+						<p>
+							システム、ネットワーク、サーバーの設計・開発
+						</p>
+					</div>
+					<!-- /.col-md-4 -->
+					<div class="service col-md-4">
+						<img src="img/service3.png" alt="">
+						<h3>デザイン</h3>
+						<p>
+							ウェブデザイン、グラフィックデザイン、DTP
+						</p>
+					</div>
+					<!-- /.col-md-4 -->
+				</div>
+				<!-- /.row -->
+			</section>
+			<!-- /#services -->
+			<section id="company">
+				<header>
+					<h2>COMPANY</h2>
+				</header>
+				<div class="row">
+					<div class="col-md-6">
+						<table class="table-company">
+							<tbody>
+								<tr>
+									<th>社名</th>
+									<td>
+										シリコンスクエア株式会社<br>
+										SILICON SQUARE, Inc.
+									</td>
+								</tr>
+								<tr>
+									<th>代表者</th>
+									<td>
+										代表取締役　川ノ口健
+									</td>
+								</tr>
+								<tr>
+									<th>設立</th>
+									<td>
+										2013年2月4日
+									</td>
+								</tr>
+								<tr>
+									<th>事業内容</th>
+									<td>
+										<ul class="list-unstyled">
+											<li>ITシステムのコンサルテイング、企画、分析</li>
+											<li>システムの設計・製造</li>
+											<li>サーバー、ネットワークの設計・構築</li>
+											<li>ウェブサイト制作・運営</li>
+											<li>グラフィックデザイン</li>
+											<li>DTP</li>
+										</ul>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!-- /.col-md-6 -->
+					<div class="col-md-6">
+						<table class="table-company">
+							<tbody>
+								<tr>
+									<th>所在地</th>
+									<td>
+										〒151-0071 東京都渋谷区本町2-2-7-307
+									</td>
+								</tr>
+								<tr>
+									<th>電話番号</th>
+									<td>
+										03-4405-8275
+									</td>
+								</tr>
+								<tr>
+									<th>FAX</th>
+									<td>
+										03-6735-4553
+									</td>
+								</tr>
+								<tr>
+									<th>メール</th>
+									<td>
+										<a href="mailto:info@siliconsquare.co.jp">info@siliconsquare.co.jp</a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!-- /.col-md-6 -->
+				</div>
+				<!-- /.row -->
+			</section>
+			<!-- /#aboutus -->
+		</div>
+	</article>
+	<footer>
+		<div class="copy">
+			&copy; SILICON SQUARE, Inc.
+		</div>
+	</footer>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$(".main-visual, .logo").delay(1000).queue(function() {
+			    $(this).addClass('fade').dequeue();
+			});
+		});
+	</script>
+</body>
+</html>
